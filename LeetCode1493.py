@@ -10,9 +10,7 @@ class Solution:
                     gr.append(nums[i:j])
                     i = j
             gr.append(nums[i:])
-            
             longest = 0
-
             for i, g in enumerate(gr):
                 if g[0] == 1:
                     longest = max(longest, len(g))
